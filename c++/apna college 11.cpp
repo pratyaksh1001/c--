@@ -7,7 +7,7 @@ int binsearch(int arr[],int size,int key){
     int high=size-1; 
     int mid=(high+low)/2;
     while(true){
-        if(key==arr[mid]){  
+        if(key==arr[mid]){
             return mid; 
             break;
         }
