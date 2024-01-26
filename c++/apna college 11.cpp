@@ -4,11 +4,11 @@ using namespace std;
 
 int binsearch(int arr[],int size,int key){
     int low=0;
-    int high=size-1;
+    int high=size-1; 
     int mid=(high+low)/2;
     while(true){
         if(key==arr[mid]){ 
-            return mid;
+            return mid; 
             break;
         }
         else if(key>arr[mid]){
