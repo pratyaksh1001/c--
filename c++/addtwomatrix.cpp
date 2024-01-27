@@ -28,5 +28,5 @@ int main(){
             cout<<sum[i][j]<<" ";
         }
         
-    }
+    } 
 }
