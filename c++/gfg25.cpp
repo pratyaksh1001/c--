@@ -12,7 +12,7 @@ auto start = chrono::steady_clock::now();
 
 int gold(int mine[5][7],int i,int j){
     if(j==6){
-        break;
+        return 0;
     }
         
 }
