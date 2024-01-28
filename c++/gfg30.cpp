@@ -12,10 +12,8 @@ int main(){
     for(int k=n-1;k>=0;k--){
         for(int j=0;j<=n;j++){
             for(int i=j+1;i<=n;i++){
-
-               
                 if(pow(arr[k],2)==pow(arr[i],2)+pow(arr[j],2)){
-                     printf("%d = %d + %d",arr[k]*arr[k],arr[i]*arr[i],arr[j]*arr[j]);
+                    printf("%d = %d + %d",arr[k]*arr[k],arr[i]*arr[i],arr[j]*arr[j]);
                 }
             }
         }
