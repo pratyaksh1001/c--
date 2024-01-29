@@ -1,7 +1,6 @@
 /*
 Given an unsorted array arr[] of n positive integers. Find the number of triangles that can be formed with three different array elements as lengths of three sides of triangles. 
 */
-
 #include <iostream>
 #include <chrono>
 #include <algorithm>
@@ -23,7 +22,6 @@ int main(){
         }
     }
     cout<<c<<" ";
-
 
 cout << "\n";
 auto end = chrono::steady_clock::now();
