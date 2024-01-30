@@ -33,7 +33,6 @@ int quick(int arr[],int n,int x,int y,int p){
     }
     }
     
-
 }
 
 int main(){
