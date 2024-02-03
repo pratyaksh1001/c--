@@ -22,7 +22,7 @@ int main(){
       for(int j=0;j<c[i];j++){
         arr2[k]=i;
         k++;
-      }  
+      }
     }
     for(int i=0;i<n;i++){
         cout<<arr2[i]<<" ";
