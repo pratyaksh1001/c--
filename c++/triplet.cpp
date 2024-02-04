@@ -8,7 +8,7 @@ int main(){
     int arr[n]={1,8,9,0,6,5,4,3,2,1,-1,-5,-6,-3,-4,6,-7,-3,0,-1};
     sort(arr,arr+n);
     int x=-1;
-    int i=0;
+    int i=0;  
     int j=n-1;
     int k=n/2;
     while(true){
