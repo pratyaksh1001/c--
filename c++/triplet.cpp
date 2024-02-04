@@ -17,7 +17,7 @@ int main(){
                 j--;
             }
             else if(j==k){
-                k--;
+                k--; 
             }
         }
         else if(arr[i]+arr[j]+arr[k]<x){
