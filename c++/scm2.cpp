@@ -11,7 +11,7 @@ int main(){
     string arr[8]={"","monday","tuesday","wednesday","thursday","friday","saturday","sunday"};
     int year;
     int date;
-    int month;
+    int month;  
     int x=0;
     int year2;
     printf("enter the year: ");
@@ -39,10 +39,10 @@ int main(){
     printf("enter the second year: ");
     scanf("%d",&year2);
     if(year2>year){
-        cout<<"the day in second year is: "<<arr[((x%7))+((year2-year)%7)];
+        cout<<"the day in second year is: "<<arr[((x%7))+(((year2-year)*365)%7)];
     }
     else{
-        cout<<"the day in second year is: "<<arr[(x%7)+(7-(year-year2)%7)];
+        cout<<"the day in second year is: "<<arr[(x%7)+(7-((year-year2)*365)%7)];
     }
 
 cout << "\n";
