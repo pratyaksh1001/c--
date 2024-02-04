@@ -14,7 +14,7 @@ int main(){
                 std::cout<<0<<" ";
             }
             else{
-                std::cout<<1<<" ";
+                std::cout<<1<<" "; 
             }
         }
         }
