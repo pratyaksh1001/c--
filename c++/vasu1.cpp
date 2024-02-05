@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     int x=10;
     int y=22;
+    
     int m=1;
     int f=min(x,y);
     for(int i=1;i<=f;i++){
