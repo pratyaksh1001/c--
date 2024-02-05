@@ -7,7 +7,7 @@ int main(){
     int n;
     printf("enter the number of rows: ");
     scanf("%d",&n);
-    
+        
 
 cout << "\n";
 auto end = chrono::steady_clock::now();
