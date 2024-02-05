@@ -15,7 +15,7 @@ int main(){
     int x=0;
     int year2;
     printf("enter the year: ");
-    scanf("%d-%d-%d",&date,&month,&year);
+    scanf("%d-%d-%d",&date,&month,&year);  
     for(int i=1;i<=month;i++){
         if(i==2){
             if(year%4==0 && year%100!=0){
