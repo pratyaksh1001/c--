@@ -12,9 +12,8 @@ class node{
         next=NULL;
     }
 };
-
+ 
 void insertattail(node* &head,int val){
-    
     node* n=new node(val);
     node* temp=head;
     if(head==NULL){
