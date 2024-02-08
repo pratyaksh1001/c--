@@ -7,40 +7,30 @@ class node{
     public:
     int data;
     node* next;
-    node(int val){
-        data=val;
-        next=NULL;
+    node(int data){
+        this -> data=data;
+        this -> next=NULL;
     }
 };
- 
-void insertattail(node* &head,int val){
-    node* n=new node(val);
-    node* temp=head;
-    if(head==NULL){
-        head=n;
-    }
-    while(temp->next!=NULL){
-        temp=temp->next;
-    }
-    temp->next=n;
+
+void insertathead(node* &head,int data){
+    node * temp=new node(data);
+    temp -> next = head;
 }
 
-void display(node* head){
+void printlist(node * &head){
     node* temp=head;
+
     while(temp!=NULL){
-        cout<<temp->data<<"->";
+        cout<<temp ->data<<" ";
         temp=temp->next;
     }
+
 }
 
 int main(){
-    node* head = NULL;
-    insertattail(head,1);
-    insertattail(head,2);
-    insertattail(head,3);
-    display(head);
-
-
+    node* node1=new node(10);
+    cout<<node1 -> data<<endl;
 
 cout << "\n";
 auto end = chrono::steady_clock::now();
