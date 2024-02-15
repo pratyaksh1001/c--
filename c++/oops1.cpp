@@ -6,7 +6,7 @@ using namespace std;
 Write a C++ program to implement a class called Circle that has private member variables for radius. Include member functions to calculate the circle's area and circumference.
 */
 
-class circle{
+class circle{ 
     private:
     int radius;
     public:
