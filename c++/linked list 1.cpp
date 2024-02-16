@@ -18,14 +18,14 @@ void insertathead(node* &head,int data){
     temp -> next = head;
 }
 
-void printlist(node * &head){
+void printlist(node* &head){
     node* temp=head;
 
     while(temp!=NULL){
         cout<<temp ->data<<" ";
         temp=temp->next;
     }
-
+    cout<<endl;
 }
 
 int main(){
