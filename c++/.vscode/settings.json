@@ -3,5 +3,10 @@
         "iostream": "cpp",
         "chrono": "cpp",
         "random": "cpp"
-    }
+    },
+    "editor.bracketPairColorization.enabled": false,
+    "editor.codeActionsOnSave": {},
+    "workbench.colorCustomizations": {},
+    "editor.fontVariations": false,
+    "editor.fontWeight": "normal"
 }
