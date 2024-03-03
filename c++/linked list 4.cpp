@@ -37,17 +37,24 @@ int rmv(node* x){
     x->next=NULL;
 }
 
+int ins(node* x,node* y,node* z){
+    x->next=y;
+    y->next=z;
+}
+
 int main(){
     node a(10);
     node b(20);
     node c(500);
     node d(30);
     node e(123);
+    node x(567);
     attail(&a,&c);
     attail(&c,&d);
     attail(&d,&b);
     athead(&a,&e);
-    rmv(&d);
+    ins(&d,&x,&b);
+    rmv(&x);
     traverse(&e);
 
 cout << "\n";
