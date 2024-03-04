@@ -39,6 +39,55 @@ int prime(int a){
     }
 }
 
+int fib(int n){
+    int r1=0;
+    int r2=1;
+    int r3=0;
+    printf("%d %d ",0,1);
+    while(n>2){
+        r3=r1+r2;
+        printf("%d ",r3);
+        r1=r2;
+        r2=r3;
+        n--;
+    }
+}
+
+int factsum(int n){
+    int r=0;
+    while(n>0){
+        r+=(fact(n));
+        n--;
+    }
+    return r;
+}
+
+int squaresum(int n){
+    int r=0;
+    while(n>0){
+        r+=(n*n);
+        n--;
+    }
+    return r;
+}
+
+int power(int n,int p){
+    while(p>0){
+        n*=n;
+        p--;
+    }
+    return n;
+}
+
+int complexseries(int n){
+    int r=0;
+    while(n>0){
+        r+=(fact(n)/power(n,n));
+        n--;
+    }
+    return r;
+}
+
 int main(){
     int a=5;
     int b=20;
@@ -47,4 +96,9 @@ int main(){
     int r2=arm(b);
     int r3=prime(c);
     printf("%d\n%d\n%d\n",r1,r2,r3);
+    fib(16);
+    printf("\n");
+    printf("%d\n",factsum(5));
+    printf("%d\n",squaresum(3));
+    printf("%d\n",complexseries(5));
 }
