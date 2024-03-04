@@ -49,7 +49,28 @@ int revtraverse(node* tail){
     }
 }
 
+int nthnode(node* head,int n){
+    int i=0;
+    while(head->next!=NULL){
+        
+        if(i==n){
+            cout<<head->data<<" ";
+        }
+        i++;
+        head=head->next;
+    }
+}
 
+int revnthnode(node* tail,int n){
+    int i=0;
+    while(tail->next!=NULL){
+        if(i==n){
+            cout<<tail->data<<" ";
+        }
+        i++;
+        tail=tail->prev;
+    }
+}
 
 int main(){
     node a1(10);
@@ -63,6 +84,8 @@ int main(){
     attail(&a4,&a5);
     traverse(&a1);
     revtraverse(&a5);
+    nthnode(&a1,3);
+    revnthnode(&a5,3);
     
 cout << "\n";
 auto end = chrono::steady_clock::now();
