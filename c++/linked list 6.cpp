@@ -57,14 +57,14 @@ int terminal(node* head,node* tail){
 
 int circulartraverse(node* head,int n){
     for(int i=0;i<n;i++){
-        cout<<head->data<<" -> ";
+        cout<<head->data<<" ";
         head=head->next;
     }
 }
 
 int revcirculartraverse(node* tail,int n){
     for(int i=0;i<n;i++){
-        cout<<tail->data<<" -> ";
+        cout<<tail->data<<" ";
         tail=tail->prev;
     }
 }
