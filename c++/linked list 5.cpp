@@ -51,7 +51,7 @@ int revtraverse(node* tail){
 
 int nthnode(node* head,int n){
     int i=0;
-    while(head->next!=NULL){
+    while(head!=NULL){
         
         if(i==n){
             cout<<head->data<<" ";
@@ -72,6 +72,21 @@ int revnthnode(node* tail,int n){
     }
 }
 
+int count(node* head){
+    int n=0;
+    while(true){
+        if(head->next!=NULL){
+            n++;
+            head=head->next;
+        }
+        else{
+            n++;
+            break;
+        }
+    }
+    return n;
+}
+
 int main(){
     node a1(10);
     node a2(20);
@@ -86,6 +101,7 @@ int main(){
     revtraverse(&a5);
     nthnode(&a1,3);
     revnthnode(&a5,3);
+    cout<<endl<<count(&a1)<<endl;
     
 cout << "\n";
 auto end = chrono::steady_clock::now();
