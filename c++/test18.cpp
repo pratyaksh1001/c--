@@ -7,7 +7,6 @@ int insert(int arr[],int s){
     cout<<"enter the position at which yoou want to add the element: ";
     cin>>p;
     cout<<"enter the element that you want to insert: ";
-    printf("hello %d",10);
     cin>>e;
     int arr2[s];
     for(int i=0;i<s;i++){
@@ -16,7 +15,7 @@ int insert(int arr[],int s){
             arr2[i]=e;
         }
         else if(i>p){
-            int temp=arr[i+1];
+            //int temp=arr[i+1];
             arr2[i+1]=arr[i];
         }
         else{

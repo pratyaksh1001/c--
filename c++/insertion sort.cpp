@@ -15,7 +15,7 @@ int main(){
         }
     }
     }
-    for(int k=0;k<20;k++){
+    for(int k=0;k<n;k++){
         cout<<arr[k]<<" ";
     }
 }

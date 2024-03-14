@@ -4,12 +4,13 @@ using namespace std;
 
 class node{
      public:
-     int data;
+     string data;
      node* l=NULL;
      node* r=NULL;
      node* root=NULL;
-     node(int d){
+     node(string d){
           this->data=d;
+
      }
      void right(node* ex){
           this->r=ex;
@@ -27,7 +28,6 @@ void traversal1(node* top){
      if(top->l==NULL && top->r==NULL){
           cout<<top->data<<endl;
      }
-     
      else{
           if(top->l!=NULL){
                cout<<top->data<<endl;
@@ -37,7 +37,31 @@ void traversal1(node* top){
                //cout<<top->data<<endl;
                traversal1(top->r);
           }
+     }
+}
 
+void traverseback(node* bottom){
+     if(bottom->root==NULL){
+          return;
+     }
+     cout<<bottom->l->data<<" ";
+     cout<<bottom->r->data<<" ";
+     traverseback(bottom->root);
+}
+
+void traversal2(node* top){
+     if(top->l==NULL && top->r==NULL){
+          traverseback(top);
+     }
+     else if(top->l==NULL && top->r!=NULL){
+          traversal2(top->r);
+     }
+     else if(top->l!=NULL && top->r==NULL){
+          traversal2(top->l);
+     }
+     else{
+          traversal2(top->l);
+          traversal2(top->r);
      }
 }
 
@@ -62,12 +86,18 @@ int binary(int n,int arr[],int low,int high,int key){
 }
 
 int main(){
-     int n=10;
-     int arr[n]={7,4,5,6,2,3,8,9,0,11};
-     sort(arr,arr+n);
-     for(int i=0;i<n;i++){
-          cout<<arr[i]<<" ";
-     }
-     cout<<endl;
-     cout<<binary(n,arr,0,n-1,9)<<endl;
+     node top1("top");
+     node l2("L-1");
+     node r2("R-1");
+     node ll3("LL-2");
+     node lr3("LR-2");
+     node rl3("RL-2");
+     node rr3("RR-2");
+     top1.left(&l2);
+     top1.right(&r2);
+     l2.left(&ll3);
+     l2.right(&lr3);
+     r2.right(&rr3);
+     r2.left(&rl3);
+     traversal1(&top1);
 }
