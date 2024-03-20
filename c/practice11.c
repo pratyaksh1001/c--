@@ -10,8 +10,8 @@ void swap1(int* x,int* y){
 int main(){
      int a=10;
      int b=-100;
-     int* ap=&a;
-     int* bp=&b;
+     int* ap=&b;
+     int* bp=&a;
      swap1(ap,bp);
-     printf("%d %d\n",*ap,*bp);   
+     printf("%d %d\n",*ap,*bp);
 }
