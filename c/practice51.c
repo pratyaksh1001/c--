@@ -15,6 +15,26 @@ int avg(int arr[],int n){
      return (s/n);
 }
 
+int maximum(int arr[],int n){
+     int r=-100000;
+     for(int i=0;i<n;i++){
+          if(arr[i]>r){
+               r=arr[i];
+          }
+     }
+     return r;
+}
+
+int minimum(int arr[],int n){
+     int r=+100000;
+     for(int i=0;i<n;i++){
+          if(arr[i]<r){
+               r=arr[i];
+          }
+     }
+     return r;
+}
+
 int second(int arr[],int n){
      int r1=0;
      int r2=0;
@@ -78,6 +98,26 @@ int rightday(int arr[],int n){
      }
 }
 
+int even(int arr[],int n){
+     int c=0;
+     for(int i=0;i<n;i++){
+          if(arr[i]%2==0){
+               c++;
+          }
+     }
+     return c;
+}
+
+int odd(int arr[],int n){
+     int c=0;
+     for(int i=0;i<n;i++){
+          if(arr[i]%2!=0){
+               c++;
+          }
+     }
+     return c;
+}
+
 int main(){
      int n=10;
      int arr[10]={66,799,8469,7321,57564,3904,7643,98544,6659,67457};
@@ -87,4 +127,6 @@ int main(){
      left(arr,n);
      printf("\n");
      rightday(arr,n);
+     printf("%d is min of array\n",minimum(arr,n));
+     printf("%d is max of array\n",maximum(arr,n));
 }
