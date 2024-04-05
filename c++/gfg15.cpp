@@ -8,7 +8,7 @@ auto start = chrono::steady_clock::now();
 
 
 int main(){
-    string s="hbdskjvritffgasndsvgryvuu";
+    string s="hgnhklili";
     int n=s.size();
     int i=0;
     int j=n-1;

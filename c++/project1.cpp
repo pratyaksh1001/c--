@@ -197,7 +197,6 @@ int main(){
           int a;
           cout<<"enter 1 to enter details of new employee"<<endl;
           cout<<"enter 2 to view details of employee"<<endl;
-          cout<<"enter 2 to enter details of new customer"<<endl;
           cout<<"enter 3 to check your balance"<<endl;
           cout<<"enter 4 to view all your details"<<endl;
           cout<<"enter 5 to fix-deposit"<<endl;
@@ -229,6 +228,7 @@ int main(){
                cin>>f;
                cin>>l;
                emplist.push_back(employee(e,s,b,age,a,f,l));
+               cout<<endl;
           }
           else if(a==2){
                for(int i=0;i<emplist.size();i++){
@@ -237,23 +237,15 @@ int main(){
                cout<<endl;
           }
           else if(a==3){
-               int a,b,e,s,age;
-               string f,l;
-               cout<<"enter the employee id: ";
-               cin>>e;
-               cout<<"enter the salary: ";
-               cin>>s;
-               cout<<"enter the account balance: ";
-               cin>>b;
-               cout<<"enter account number: ";
-               cin>>a;
-               cout<<"enter the age: ";
-               cin>>age;
-               cout<<"enter the name: ";
-               fflush(stdin);
-               cin>>f;
-               cin>>l;
-               emplist.push_back(employee(e,s,b,age,a,f,l));
+               int x;
+               cout<<"enter the account number: ";
+               cin>>x;
+               for(int i=0;i<custlist.size();i++){
+                    if(custlist[i].accnumber==x){
+                         custlist[i].show();
+                    }
+               }
+               cout<<endl;
           }
           else if(a==4){
                view(custlist);
@@ -267,6 +259,7 @@ int main(){
                          cout<<endl;
                     }
                }
+               cout<<endl;
           }
           else if(a==5){
                int x;
@@ -282,6 +275,7 @@ int main(){
                          custlist[i].deposit(y);
                     }
                }
+               cout<<endl;
           }
           else if(a==6){
                int x;
@@ -297,6 +291,7 @@ int main(){
                          custlist[i].deposit(y);
                     }
                }
+               cout<<endl;
           }
 
           else if(a==7){
@@ -313,6 +308,7 @@ int main(){
                          custlist[i].withdraw(y);
                     }
                }
+               cout<<endl;
           }
           else if(a==8){
                int x;
@@ -331,6 +327,7 @@ int main(){
                          custlist[i].borrow(y,c);
                     }
                }
+               cout<<endl;
           }
           else if(a==9){
                int x;
@@ -346,6 +343,7 @@ int main(){
                          custlist[i].loanrepay(y);
                     }
                }
+               cout<<endl;
           }
           else if(a==10){
                emplist=passmonth(emplist);
@@ -356,6 +354,7 @@ int main(){
                     month=0;
                     custlist=passyear(custlist);
                }
+               cout<<endl;
           }
 
           else if(a==11){
