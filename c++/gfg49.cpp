@@ -1,5 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
 #include <algorithm>
 using namespace std;
 
@@ -21,7 +20,6 @@ int main(){
         }
         s=0;
     }
-=======
 #include <chrono>
 #include <algorithm>
 using namespace std;
@@ -44,5 +42,4 @@ auto end = chrono::steady_clock::now();
 auto diff = end - start;
 cout << chrono::duration<double, milli>(diff).count() << " ms" << endl;
 return 0;
->>>>>>> dd456cfac6743622110f56861b31f1475cc7e159
 }
