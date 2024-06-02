@@ -11,7 +11,7 @@ int count(int n,int c){
     }
 }
 int main(){
-    int n=15;
+    int n=5;
     int c=1;
     printf("%d\n",count(n,c));
-},
+}
