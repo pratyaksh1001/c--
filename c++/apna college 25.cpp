@@ -13,7 +13,7 @@ int main(){
             a[i]-=32;
         }
         else{
-            a[i]=a[i];
+            a[i]=a[i];      
         }
     }
     cout<<a;
