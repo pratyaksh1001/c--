@@ -44,7 +44,7 @@ class customer{
           cout<<"the fix-deposit is: "<<this->fix<<endl;
      }
      int deposit(int x){
-          this->fix+=x;
+          this->fix+=x;  
           net+=x;
           cout<<"Successfully deposited !"<<endl<<"the total fix-deposit is: "<<this->fix<<endl;
      }

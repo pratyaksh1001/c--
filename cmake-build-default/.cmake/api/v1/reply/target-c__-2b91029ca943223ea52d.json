@@ -38,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -54,7 +54,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -63,10 +64,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -93,7 +90,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -115,6 +113,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "c++/advance pattern 2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "c++/lecture1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

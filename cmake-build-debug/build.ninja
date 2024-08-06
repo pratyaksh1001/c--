@@ -67,6 +67,12 @@ build CMakeFiles/c__.dir/c++/advance_pattern_2.cpp.obj: CXX_COMPILER__c___unscan
   OBJECT_DIR = CMakeFiles\c__.dir
   OBJECT_FILE_DIR = CMakeFiles\c__.dir\c++
 
+build CMakeFiles/c__.dir/c++/lecture1.cpp.obj: CXX_COMPILER__c___unscanned_Debug D$:/github/c--/c++/lecture1.cpp || cmake_object_order_depends_target_c__
+  DEP_FILE = CMakeFiles\c__.dir\c++\lecture1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\c__.dir
+  OBJECT_FILE_DIR = CMakeFiles\c__.dir\c++
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target c__
@@ -75,7 +81,7 @@ build CMakeFiles/c__.dir/c++/advance_pattern_2.cpp.obj: CXX_COMPILER__c___unscan
 #############################################
 # Link the executable c__.exe
 
-build c__.exe: CXX_EXECUTABLE_LINKER__c___Debug CMakeFiles/c__.dir/main.cpp.obj CMakeFiles/c__.dir/c++/gfg16.cpp.obj CMakeFiles/c__.dir/c++/advance_pattern_2.cpp.obj
+build c__.exe: CXX_EXECUTABLE_LINKER__c___Debug CMakeFiles/c__.dir/main.cpp.obj CMakeFiles/c__.dir/c++/gfg16.cpp.obj CMakeFiles/c__.dir/c++/advance_pattern_2.cpp.obj CMakeFiles/c__.dir/c++/lecture1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\c__.dir

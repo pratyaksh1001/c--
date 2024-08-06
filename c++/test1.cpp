@@ -8,7 +8,7 @@ int main(){
     int n;
     cout<<"enter the first term: ";
     cin>>a;
-    cout<<"enter the common differnce: ";
+    cout<<"enter the common difference: ";
     cin>>d;
     cout<<"enter the number of terms: ";
     cin>>n;
