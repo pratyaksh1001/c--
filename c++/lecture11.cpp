@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// constructor
+// constructors
 
 class movie{
     private:
@@ -14,6 +14,11 @@ class movie{
         this->director=b;
         this->year=y;
     }
+    movie(movie &ref){ // this is example of custom copy
+        this->director=ref.director; // here the values are directly getting passed by reference
+        this->title=ref.title; 
+        this->year=ref.year;
+    }
     ~movie(){
         cout<<"movie - "<<this->title<<" destroyed"<<endl;
     }
@@ -22,6 +27,7 @@ class movie{
 int main(){
     movie m1("titanic","myself",2000);
     movie m2("hello world","yourself",1999);
+    movie m3=m1;
 }
 
 /*
@@ -46,5 +52,7 @@ default constructor - the constructor is empty or doesn't  put anything in the o
 parameterised constructor - it has parameters apart from this constructor is used to provide 
                             different values of distinct objects
 
+copy constructor - there are 2 types of cpy defaukt and custom copy constructor is used for custom copy
+                   a constructor that is used to copy/initialize the values of one object into another object is called copy constructor.
 
 */ 
