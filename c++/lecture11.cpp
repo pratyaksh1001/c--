@@ -14,7 +14,7 @@ class movie{
         this->director=b;
         this->year=y;
     }
-    movie(movie &ref){ // this is example of custom copy
+    movie(movie &ref){ // this is example of custom copy that does deep copy
         this->director=ref.director; // here the values are directly getting passed by reference
         this->title=ref.title; 
         this->year=ref.year;
