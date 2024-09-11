@@ -1,8 +1,11 @@
 {
     "files.associations": {
+        "*.ejs": "html",
         "iostream": "cpp",
         "chrono": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "string": "cpp",
+        "ostream": "cpp"
     },
     "editor.bracketPairColorization.enabled": false,
     "editor.codeActionsOnSave": {},

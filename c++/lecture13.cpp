@@ -27,7 +27,7 @@ int main(){
     cout<<endl<<endl;
     vectorclass v1(10,20,30);
     vectorclass v2=v1; //shallow copy
-    vectorclass v3(v1);
+    vectorclass v3(v1); //deep copy
     v2.change(100);
     v1.display();
     v2.display();
