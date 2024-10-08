@@ -10,7 +10,6 @@ class nums{
         this->a=x;
         this->b=y;
         this->c=z;
-
     }
 
     void print(){
@@ -29,6 +28,7 @@ int main(){
 
     c1.print();
     c2.print();
+    c1.print();
 }
 
 //static dsta member is initialized to 0 whenever the 1st object of it's class is created no other initialized value is permitted
