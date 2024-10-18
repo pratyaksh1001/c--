@@ -1,6 +1,10 @@
-overloading - in function overloading it can occur without or with inheritance
+# overloading
 
-overiding - it can occur when 1 class is inherited from another class
+in function overloading it can occur without or with inheritance
+
+# overiding
+
+it can occur when 1 class is inherited from another class
 
 * in function overloading must have different signature of function
 * in function overriding must have same signature
@@ -13,7 +17,25 @@ overiding - it can occur when 1 class is inherited from another class
 
 virtual functions allow derived class to override a function defined in a base class where the function that gets called is determined at runtime based on the object type
 
-
 # pure virtual
 
 it is a virtual function that has no implementations in the base class and it is declared by assigning 0
+
+# abstract class
+
+you can't live in blueprint it need to be turned into a real house(derived class)
+
+it can have functions that does not have any details this is known as a pure virtual function
+
+you cannot create an object firectly from an abstract class you need to make a new class that use the abstract class
+
+# order of execution
+
+
+
+# polymorphism
+
+
+# virtual distructor
+
+it ensures proper cleanup in class hierarchy
