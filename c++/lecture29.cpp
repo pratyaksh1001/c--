@@ -2,6 +2,7 @@
 using namespace std;
 
 class Vehicle {
+
 public:
     void show() {
         cout << "This is a Vehicle" << endl;

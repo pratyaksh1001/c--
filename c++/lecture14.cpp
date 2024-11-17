@@ -13,6 +13,9 @@ public:
     Student(string n, int a, float g) : name(n), age(a), grade(g) {}
     Student(Student &s) : name(s.name), age(s.age), grade(s.grade) {}
 
+    ~Student(){
+        cout<<"destroyed"<<endl;
+    }
     
     void display()  {
         cout << "Name: " << name << endl;
