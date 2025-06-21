@@ -1,6 +1,5 @@
-//rat in a maze
-
 #include <iostream>
+#include <vector>
 using namespace std;
 
 bool check(int maze[5][5],int soln[5][5],int n,int x,int y){

@@ -12,5 +12,5 @@ int main(){
         n=n/10;
         cout<<rev<<endl;
     }
-    cout<<rev;
+    cout<<rev<<endl;
 }

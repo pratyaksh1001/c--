@@ -20,4 +20,5 @@ int mergesort(int arr[],int n,int low,int high){
 int main(){
     int n=10;
     int arr[10]={5,4,3,7,8,9,1,2,3,0};
+    mergesort()
 }
